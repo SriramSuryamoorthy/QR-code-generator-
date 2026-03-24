@@ -16,7 +16,7 @@ from datetime import datetime
 import os
 
 # ---- App setup ----
-app = Flask(__name__)
+app = Flask(__name__, template_folder='.')
 
 # Secret key for session (change this in production!)
 app.config['SECRET_KEY'] = 'sriram-qrcraft-secret-2026'

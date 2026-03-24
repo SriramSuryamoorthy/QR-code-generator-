@@ -5,10 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>QRcraft Pro — Super UI</title>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="/static/css/script.css"/>
+  <link rel="stylesheet" href="./static/css/script.css"/>
 </head>
 <body>
-  <!-- Animated Background Orbs -->
   <div class="bg-layer">
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
@@ -17,7 +16,6 @@
   </div>
 
   <div class="app-container">
-    <!-- Header -->
     <header class="glass-header">
       <div class="logo">
         <div class="logo-icon">Q</div>
@@ -34,12 +32,8 @@
       </div>
     </header>
 
-    <!-- Main Layout -->
     <main class="main-layout">
-      <!-- Left Panel: Controls / Login / Register / History -->
       <section class="glass-panel controls-panel">
-        
-        <!-- Generator View -->
         <div class="view-section active" id="view-generator">
           <h2 class="section-title">Design Your QR Code</h2>
           <div class="input-group">
@@ -47,7 +41,6 @@
             <input type="text" id="qr-input" placeholder="https://example.com" autocomplete="off"/>
             <p class="error-msg" id="qr-error">Please enter a valid URL or text.</p>
           </div>
-          
           <div class="split-group">
             <div class="input-group">
               <label>2. QR Color</label>
@@ -55,15 +48,13 @@
             </div>
             <div class="input-group">
               <label>3. Background</label>
-              <input type="color" id="qr-bg" value="#07090e"/>
+              <input type="color" id="qr-bg" value="#111827"/>
             </div>
           </div>
-          
           <div class="input-group">
             <label>4. Size (<span id="size-label">250px</span>)</label>
             <input type="range" id="size-slider" min="150" max="400" step="10" value="250"/>
           </div>
-
           <div class="input-group">
             <label>5. Custom Logo (Optional)</label>
             <label for="logo-upload" class="file-upload">
@@ -72,11 +63,9 @@
             </label>
             <button id="remove-logo" class="text-btn hidden">Remove Logo</button>
           </div>
-
           <button id="generate-btn" class="action-btn glow-btn">Generate QR Code</button>
         </div>
 
-        <!-- Auth Views -->
         <div class="view-section hidden" id="view-auth">
           <h2 class="section-title" id="auth-title">Log In</h2>
           <div class="input-group" id="group-username" style="display:none;">
@@ -99,21 +88,17 @@
           <button id="back-to-gen" class="text-btn mt-4">← Back to Generator</button>
         </div>
 
-        <!-- History View -->
         <div class="view-section hidden" id="view-history">
           <div class="history-header">
             <h2 class="section-title">Your QR History</h2>
             <button id="clear-history-btn" class="text-error-btn">Clear All</button>
           </div>
           <div class="history-list" id="history-list">
-            <!-- Dynamically populated -->
           </div>
           <button id="back-to-gen-history" class="text-btn mt-4">← Back to Generator</button>
         </div>
-
       </section>
 
-      <!-- Right Panel: Preview -->
       <section class="glass-panel preview-panel">
         <div class="preview-container">
           <div id="empty-state" class="empty-state">
@@ -155,11 +140,10 @@
       </section>
     </main>
 
-    <!-- Toast Notification -->
     <div id="toast" class="toast hidden"></div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-  <script src="/static/js/style.js"></script>
+  <script src="./static/js/style.js"></script>
 </body>
 </html>
