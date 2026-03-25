@@ -36,8 +36,4 @@ It allows users to generate QR codes for text, URLs, or any input data instantly
 
 ## ▶️ How to Run
 
-### 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/SriramSuryamoorthy/qr-code-generator.git
-cd qr-code-generator
+ https://sriramsuryamoorthy.github.io/QR-code-generator-/
